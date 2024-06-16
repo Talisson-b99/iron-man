@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/svg-inject.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Iron Man</title>
+  </head>
+  <body>
+    <div class="backgorund"></div>
+    <div class="bg-loader">
+      <div class="bg-loader-1">
+        <img src="./svg/head.svg" alt="" onload="SVGInject(this)" />
+      </div>
+      <div class="bg-loader-2">
+        <img src="./svg/boca.svg" alt="" onload="SVGInject(this)" />
+      </div>
+    </div>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="./svg/marvel-logo-34288 1.svg"
+          alt=""
+          onload="SVGInject(this)"
+        />
+      </div>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Avengers</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Celestials</a></li>
+          <li class="menu-item"><a class="menu-link" href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="container-text">
+        <span class="text-1">Marvel Character</span>
+        <h1 class="text-1">IRON MAN</h1>
+        <h3 class="text-1">Tony Stark</h3>
+        <p class="text-1">
+          Iron Man is a superhero appearing in American comic books published by
+          Marvel Comics. Each of Tony’s suits provides a full range of
+          telecommunications, sophisticated artificial intelligence capable of
+          piloting Tony to safety should he be rendered unconscious.
+        </p>
+
+        <a class="btn text-1" href="">Are you Marvel fan?</a>
+      </div>
+      <div class="container-img">
+        <img
+          src="./svg/tonystark.svg"
+          alt=""
+          onload="SVGInjection(this)"
+          class="js-tilt"
+        />
+      </div>
+
+      <div class="container-text-right">
+        <h2>iron man</h2>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/tilt.jquery.min.js"></script>
+    <script>
+      $(".js-tilt").tilt({
+        perspective: 4000,
+        scale: 1.05,
+      });
+    </script>
+  </body>
+</html>

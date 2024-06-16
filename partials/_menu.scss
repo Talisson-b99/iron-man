@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+}
+
+.menu {
+  @include responsive() {
+    display: none;
+  }
+}
+
+.logo {
+  svg {
+    @include responsive() {
+      width: 180px;
+    }
+  }
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+
+  .menu-link {
+    font-size: 1.125rem;
+    color: $white;
+    padding: 8px 12px;
+
+    display: block;
+    letter-spacing: 0.5px;
+
+    position: relative;
+
+    transition: 0.7s ease;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      display: block;
+      background: linear-gradient(
+        270deg,
+        rgba(138, 45, 94, 0.31) 36.32%,
+        rgba(208, 8, 114, 0.5) 65.32%
+      );
+
+      transition: 0.7s ease;
+      position: absolute;
+      left: 10px;
+    }
+
+    &:hover {
+      &::after {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}

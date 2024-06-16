@@ -1,0 +1,40 @@
+@mixin responsive() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@import "../partials/colors";
+@import "../partials/menu";
+@import "../partials/layout";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
